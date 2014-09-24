@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:components="http://schemas.android.com/apk/res/com.ustcinfo.mobile.platform.view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_black"
+    android:padding="10dp" >
+    <com.ustcinfo.mobile.platform.widget.TextProgressBar
+        android:id="@+id/down_pb"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:maxHeight="30dp"
+        android:minHeight="30dp"
+        android:progressDrawable="@drawable/progressbar"
+        android:textSize="18dp" 
+   		android:textColor="@android:color/black"  />
+
+</LinearLayout>

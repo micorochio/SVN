@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_qzone_mail"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mobile_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/top_title_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="更多"
+            android:textSize="25dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_qzone_mail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/shape_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/sys_set"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/menu_syssettings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:text="系统设置"
+                android:textColor="#ff545454"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="10.0dip"
+                android:src="@drawable/into_icon" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/shape_line" />
+
+        <LinearLayout
+            android:id="@+id/sys_sync"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/menu_bookmark_sync_sync" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:text="系统更新"
+                android:textColor="#ff545454"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="10.0dip"
+                android:src="@drawable/into_icon" />
+        </LinearLayout>
+
+       
+	  <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/shape_line" />
+        <LinearLayout
+            android:id="@+id/sys_unbind"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/lock_open" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:text="账号解绑"
+                android:textColor="#ff545454"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="10.0dip"
+                android:src="@drawable/into_icon" />
+        </LinearLayout>
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/shape_line" />
+
+        <LinearLayout
+            android:id="@+id/sys_about"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/menu_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:text="关于"
+                android:textColor="#ff545454"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="10.0dip"
+                android:src="@drawable/into_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

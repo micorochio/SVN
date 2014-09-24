@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+   <RelativeLayout
+        android:id="@+id/startup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/default_bg" >
+
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/splashImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowDx="-2"
+            android:shadowDy="-1"
+            android:shadowColor="#111111"
+            android:textSize="32sp"
+            android:text="沃运维·陕西"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="60dp"
+            android:textStyle="bold" />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="copyright © 1996-2013 陕西联通 版权所有"
+            android:textSize="10sp"
+            android:textColor="#ffffff"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

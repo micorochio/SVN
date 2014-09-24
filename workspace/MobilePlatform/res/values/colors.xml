@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<color name="button_text_normal">#ffffffff</color>
+    <color name="button_text_pressed">#ffffffff</color>
+    <color name="text_color">#ff3e3e3e</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_dark_grey">#808080</color>
+    <color name="hint_foreground_light">#ff808080</color>
+    <color name="radiobg_press">#ff6600</color>
+    <color name="radiobg_normal">#cc0000</color>
+    <color name="grey_black">#2E2E2E</color> 
+    <color name="main_color">#097dad</color>    
+</resources>    

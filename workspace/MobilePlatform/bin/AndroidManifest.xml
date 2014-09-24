@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ustcinfo"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <!-- 注册使用访问INTERNET权限 -->
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <!-- 注册使用拨打电话功能的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <!-- 允许访问网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 允许访问手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许访问日历 -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+	<uses-sdk
+	    android:minSdkVersion="8"
+	    android:targetSdkVersion="21"/>
+	
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"/>
+    <application
+        android:allowBackup="true"
+        android:name="com.ustcinfo.mobile.ApplicationEx"
+        android:icon="@drawable/icona"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".mobile.platform.view.ESSMobileActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".mobile.platform.view.MobileMarketActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".mobile.platform.view.AppAssetCommentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".mobile.platform.view.MoreActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".mobile.platform.view.AppAddCommentActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".mobile.platform.view.LogoActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mobile.platform.view.AppAddReplayActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".mobile.platform.view.MobileMainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".mobile.platform.view.AppAssetIntroductionActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".mobile.platform.view.AppAssetActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".mobile.platform.view.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="locale|mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|uiMode|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".mobile.platform.view.AppMgrCenterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".mobile.platform.view.ESSLoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <service android:name="com.ustcinfo.mobile.download.DownloadService" >
+        </service>
+
+        <activity
+            android:name=".mobile.platform.view.FileMgrActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="org.androidpn.demoapp.DemoAppActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="org.androidpn.client.NotificationDetailsActivity"
+            android:label="Notification Details" >
+        </activity>
+        <activity
+            android:name="org.androidpn.client.NotificationSettingsActivity"
+            android:label="Notification Settings" >
+        </activity>
+
+        <service
+            android:name="org.androidpn.client.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService" >
+            <intent-filter>
+                <action android:name="org.androidpn.client.NotificationService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/RelativeLayoutbottom" 
+			android:background="@drawable/header" 
+			android:layout_width="fill_parent"
+			android:layout_height="44.0dip"
+			android:layout_alignParentBottom="true">
+			<ImageButton android:id="@+id/login_option"
+				android:background="@drawable/option" android:clickable="true"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="13.0dip" android:layout_marginTop="2.0dip"
+				/>
+</RelativeLayout>

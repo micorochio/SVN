@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <TextView 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	android:textSize="18sp"
+    	android:text="安徽-沃运维"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+        <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="16sp"
+    	android:text="版本号："/>
+        <TextView 
+            android:id="@+id/tv_version"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:textSize="16sp"/>
+    </LinearLayout>
+    
+    
+        <TextView 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:textSize="16sp"
+    	android:text="版权所有：科大国创"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+        <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="16sp"
+    	android:text="软件说明："/>
+        <TextView 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:textSize="16sp"
+    	android:text="本软件仅适用于安徽联通人员使用，主要用于综合调度。"/>
+    </LinearLayout>
+</LinearLayout>

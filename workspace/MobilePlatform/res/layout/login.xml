@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainbg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="120.0px" >
+        <ImageView
+            android:id="@+id/splashImageView"
+             android:layout_marginLeft="18.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0px"
+            android:layout_marginRight="15.0px"
+            android:layout_marginTop="20.0px"
+            android:background="@drawable/corner_list_bg"
+            android:paddingBottom="30.0px"
+            android:paddingTop="20.0px" >
+
+            <!-- 账号 -->
+
+            <TextView
+                android:id="@+id/login_user_input"
+                style="@style/normalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/login_label_username" />
+
+            <EditText
+                android:id="@+id/login_edit_account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_user_input"
+                android:layout_margin="5dip"
+                android:hint="@string/login_username_hint"
+                android:inputType="text"
+                android:singleLine="true" />
+            <!-- 密码 text -->
+
+            <TextView
+                android:id="@+id/login_password_input"
+                style="@style/normalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_edit_account"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="3dp"
+                android:text="@string/login_label_password" />
+
+            <EditText
+                android:id="@+id/login_edit_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_password_input"
+                android:layout_margin="5dip"
+                android:inputType="textPassword"
+                android:password="true"
+                android:singleLine="true" />
+            <!-- 登录button -->
+
+            <CheckBox
+                android:id="@+id/login_cb_savepwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/login_btn_login"
+                android:button="@drawable/btn_check"
+                android:checked="true"
+                android:paddingLeft="25dip"
+                android:text="@string/opt_remember"
+                android:textColor="#ff222222"
+                android:textSize="16.0sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/jie_bang_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/login_btn_login"
+                android:layout_margin="5dip"
+                android:background="@drawable/btn_register"
+                android:text="@string/login_label_unregi" />
+
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/login_edit_pwd"
+                android:layout_below="@id/login_edit_pwd"
+                android:layout_margin="5dip"
+                android:background="@drawable/login_e"
+                android:text="@string/login_label_signin" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
